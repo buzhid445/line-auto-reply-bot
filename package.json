@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.build.json",
     "start": "node dist/server.js",
     "test": "vitest run"
+  },
+  "engines": {
+    "node": "22.x"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
